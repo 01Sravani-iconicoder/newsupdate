@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Every Day News</title>
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb2o-IxjmZAYd6gox8u4-S3Cz00EQEzpbJYHHV0b69BA&s"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./new.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://images.hindustantimes.com/img/2021/12/16/550x309/WhatsApp_Image_2021-09-18_at_09.42.18_1631944439782_1639614337119.jpeg"
+          alt="newslogo"
+          height="75px"
+          width="150px"
+        />
+      </div>
+      <h1>DAILY BUZZLE</h1>
+          <select name="" id="countrySelect" onchange="fetchNews()">
+            <option value="" disabled selected>--select--</option>
+            <option value="au">Australia</option>
+            <option value="br">Brazil</option>
+            <option value="cn">China</option>
+            <option value="eg">Egypt</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="hk">Hong Kong</option>
+            <option value="in">India</option>
+            <option value="jp">Japan</option>
+            <option value="mx">Mexico</option>
+            <option value="ru">Russia</option>
+            <option value="kr">South Korea</option>
+            <option value="th">Thailand</option>
+            <option value="gb">United Kingdom</option>
+            <option value="us">United States</option>
+          </select>
+    </header>
+    <div id="results"></div>
+    <script src="./news.js"></script>
+  </body>
+</html>

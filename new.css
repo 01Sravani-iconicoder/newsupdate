@@ -1,0 +1,105 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://media.istockphoto.com/id/1355531876/vector/newspaper-paper-grunge-vintage-old-aged-texture-background.jpg?s=612x612&w=0&k=20&c=nBD7LK9Iul20lb41WJoDKJoOA_mB6SehYSBLViLZboY=");
+}
+header {
+  height: 70px;
+  margin-bottom: 30px;
+  background-color: aliceblue;
+  width: 97vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+#results {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.card {
+  height: 800px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
+  transition: 2s ease;
+  background-color: white;
+}
+.card:hover {
+  transform: scale(1.2);
+}
+.card img {
+  height: 200px;
+  width: 300px;
+}
+.card button a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  animation: anch 1s infinite;
+}
+@keyframes anch {
+  0% {
+    color: red;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: blue;
+  }
+}
+.card button {
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
+  background-color: black;
+}
+.card button:active {
+  box-shadow: none;
+}
+#countrySelect {
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+}
+@keyframes colour {
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: violet;
+  }
+  100% {
+    background-color: red;
+  }
+}
+.anime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.anime div {
+  animation: colour 1s infinite;
+}
